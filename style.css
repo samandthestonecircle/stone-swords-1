@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: jslblack;
+    src: url(JBLACK.TTF);
+}
+
+h1 {
+    font-family: jslblack;
+    
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-small;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 10vh 80vh 10vh;
+}
+
+.gridarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* #centreimg:hover {
+    filter: invert();
+    background-color: black;
+} */
+
+#contact, #listen {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+   
+}
+
+
+
+#socialbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 50%;
+    /* transition: 0.5s; */
+    transform: translate(50% );
+}
+
+#contactbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    /* transition: 0.5s; */
+    transform: translate(-50% );
+}
+
+/* #topcentre:hover{
+    #stone {
+        filter: invert();
+        background-color: rgb(255, 255, 255);
+    }
+} */
+
+/* #bottomcentre:hover{
+    #swords {
+        filter: invert();
+        background-color: rgb(255, 255, 255);
+    }
+} */
+
+@media (hover: hover) {
+    /* The user can hover - generally with a mouse cursor */
+
+    #rightcentre:hover{
+    #socialbar{
+        display: flex !important;
+        filter: invert();
+        background-color: rgb(255, 255, 255);
+    }
+    #listen {
+        display: none !important;
+    }
+}
+
+#leftcentre:hover{
+    #contactbar{
+        display: flex !important;
+        filter: invert();
+        background-color: rgb(255, 255, 255);
+    }
+    #contact {
+        display: none !important;
+    }
+}
+}
+
+
+.socialicon {
+    width: 40px;
+    margin: 5px;
+}
+
+#bottomright {
+    overflow: visible;
+}
+
+#credit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    white-space: pre;
+    color: white;
+   
+}
+
+#credit:hover {
+    background-color: black;
+}
+
+img {
+    max-width: 150px;
+    width: 100%;
+}
+
